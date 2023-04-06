@@ -1,7 +1,7 @@
 <div class="row">
     <h1>Educacion</h1>
     <div class="col-lg-2">
-        <button type="button" class="btn btn-info" routerLink="/nuevaedu" *ngIf="isLogged">
+        <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">
             Agregar Educacion
         </button>
     </div>
@@ -16,17 +16,23 @@
                     </td>
                     <td>{{Educacion.descripcionE}}</td>
                     <td *ngIf="isLogged">
-                        <button type="button" class="btn btn-primary" routerLink="/editedu/{{Educacion.id}}">
+                        <button class="btn btn-light" routerLink="/editedu/{{Educacion.id}}">
                             <i class="bi bi-pencil-fill"></i>
                             EDITAR
                         </button>
                     </td>
                     <td *ngIf="isLogged">
+<<<<<<< HEAD
                         <button type="button" class="btn btn-danger" (click)="delete(Educacion.id)">
                         <i class="bi bi-trash-fill"></i>
                         BORRAR
                     </button>
                 </td>
+=======
+                        <button class="btn btn-danger" (click)="delete(Educacion.id)"></button>
+                        <i class="bi bi-trash-fill"></i>BORRAR</td>
+                    <td>BORRAR</td>
+>>>>>>> parent of e4b6156 (componente educacion y exp laboral funcionando correctamente)
                 </tr>
             </tbody>
 
